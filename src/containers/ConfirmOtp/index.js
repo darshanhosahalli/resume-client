@@ -10,49 +10,32 @@ import Button from '../../componests/button';
 import Message from '../../componests/Warning';
 import Divider from '../../componests/divider';
 
-const RegisterPage = () => {
+const ConfirmOtp = () => {
     return (
         <article>
             <Helmet>
-                <title>Register</title>
+                <title>Confirm Otp</title>
                 <meta
-                    name="Register page for rèsume page"
-                    content="Register page for app"
+                    name="Confirm Otp page for rèsume page"
+                    content="confirm OTP page for app"
                 />
             </Helmet>
             <HeaderContainer/>
             <DivWithBackground src={background}>
                 <FormCard
-                    formTitle='Register'
+                    formTitle='Confirm Otp'
                 >
                     <Form>
                         <Field
                             type="text"
-                            name="fullName"
-                            placeholder="John Doe"
-                            icon="user"
+                            name="otp"
                         >
-                            Full Name
-                        </Field>
-                        <Field
-                            type="email"
-                            name="email"
-                            placeholder="example@example.com"
-                            icon="envelope"
-                        >
-                            Email
-                        </Field>
-                        <Field
-                            type="password"
-                            name="password"
-                            icon="lock"
-                        >
-                            Password
+                            Otp
                         </Field>
                         <Button 
                             type="submit"
                         >
-                            Signup
+                            submit
                             <i class="right arrow icon"></i>    
                         </Button>
                     </Form>
@@ -60,7 +43,7 @@ const RegisterPage = () => {
                     <div class="extra content">
                         <Message>
                             <i class="icon help"></i>
-                            Already signed up? <a href="/login">Login here</a>.
+                            <a href="/">Resend Otp</a>
                         </Message>
                     </div>
                 </FormCard>
@@ -69,4 +52,4 @@ const RegisterPage = () => {
     );
 }
 
-export default RegisterPage;
+export default ConfirmOtp;

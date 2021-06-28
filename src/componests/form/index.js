@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './form.css';
 
 const Form = (props) => {
     return (
-        <form class="ui form">
+        <form class="form-content ui form">
             {props.children}
         </form>
     );

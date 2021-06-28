@@ -8,6 +8,7 @@ import Form from '../../componests/form';
 import Field from '../../componests/field';
 import Button from '../../componests/button';
 import Message from '../../componests/Warning';
+import Divider from '../../componests/divider';
 
 const LoginPage = () => {
     return (
@@ -29,22 +30,25 @@ const LoginPage = () => {
                             type="email"
                             name="email"
                             placeholder="example@example.com"
+                            icon="envelope"
                         >
                             Email
                         </Field>
                         <Field
                             type="password"
                             name="password"
+                            icon="lock"
                         >
                             Password
                         </Field>
                         <Button 
                             type="submit"
+                            icon="sign-in"
                         >
                             login
-                            <i class="right arrow icon"></i>    
                         </Button>
                     </Form>
+                    <Divider />
                     <div class="extra content">
                         <Message>
                             <i class="icon help"></i>

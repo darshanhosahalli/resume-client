@@ -1,0 +1,5 @@
+.field-margin {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}

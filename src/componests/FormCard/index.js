@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './formcard.css';
 
 const FormCard = (props) => {
     return (
         <div class="ui card">
-            <div class="content">
-                <div class="header">{props.formTitle}</div>
+            <div class="card-content content">
+                <div class="form-card header">{props.formTitle}</div>
             </div>
             <div class="content">
                 {props.children}
