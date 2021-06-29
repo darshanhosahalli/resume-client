@@ -6,6 +6,7 @@ import RegisterPage from '../RegisterPage';
 import NotFoundPage from '../NotFoundPage';
 import ConfirmOtp from '../ConfirmOtp';
 import ForgotPassword from '../ForgotPassword';
+import ResumePage from '../ResumePage';
 
 const App = () => {
     return (
@@ -28,6 +29,9 @@ const App = () => {
                 </Route>
                 <Route exact path="/forgot-password">
                     <ForgotPassword />
+                </Route>
+                <Route exact path="/resume">
+                    <ResumePage />
                 </Route>
                 <Route exact path="*">
                     <NotFoundPage />
